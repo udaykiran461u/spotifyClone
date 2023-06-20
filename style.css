@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fugaz+One&family=Shadows+Into+Light&family=Sigmar+One&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+nav{
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Sigmar One', cursive;
+}
+
+nav ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height:65px;
+    font-size: 18px;;
+    background-color: black;
+    color:white;
+}
+
+nav ul li{
+    padding:0 12px;
+}
+
+.brand img{
+    width:44px;
+    padding:0 7px;
+}
+
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+h1{
+    margin:10px 0px 0px 40px;
+}
+
+.container{
+    min-height:60vh;
+    background-color: black;
+    color:white;
+    font-family: 'Caveat', cursive;
+    font-weight: bolder;
+    display:flex;
+    margin:20px auto;
+    width:60%;
+    border-radius: 10px;
+    padding:10px 20px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.bottom{
+    display:flex;
+    flex-direction: column;
+    position:sticky;
+    height:100px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+}
+
+.bottom .songInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:10vw;
+    margin-top:15px;
+    font-size: 13px;;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+
+
+#myProgressBar{
+    width:80%;
+    cursor:pointer;
+}
+
+.icons{
+    margin-top:15px;
+    cursor: pointer;
+}
+
+.icons i{
+    margin:0 8px;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top:10px;
+    padding:10px 0px 20px 0px;
+}
+
+.songItem{
+    height:33px;
+    display:flex;
+    background-color: white;
+    color: black;
+    margin:0px 20px 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding:0 10px;
+    width:90%;
+    transition: box-shadow .5s;
+}
+
+.songItem:hover{
+    box-shadow:0px 0px 10px 5px  rgb(77 163 234);
+    
+    /* background-color: aliceblue; */
+}
+
+.songItem img{
+    height:30px;
+    width:50px;
+    /* margin-left:20px; */
+    border-radius: 10px;
+}
+
+.songName{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 18px;;
+}
+
+.timeStamp{
+    margin:0 10px;
+}
+
+.songItemPlay:hover{
+    cursor:pointer;
+}
+
+#masterSongName{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    .bottom{
+        /* display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;*/
+        gap:30px;
+        flex:50%;
+    }
+}
